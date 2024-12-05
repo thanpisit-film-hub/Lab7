@@ -2,7 +2,18 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	char sum;
+	if(x == 'A'){
+		sum = '[' - 1;
+	}
+	if(x != 'A' and x <= 'Z'){
+		sum = x - 1;
+	}
+	if(x  > 'Z' or x < 'A'){
+		sum = '0';
+	}
+	
+	return sum;
 }
 
 int main(){
